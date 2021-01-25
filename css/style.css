@@ -34,6 +34,14 @@ Project:	Eric
 @import url(filter.css);
 @import url(default-skin/default-skin.css);
 @import url(lightgallery.css);
+
+.inline-img{
+  height: 1.5em;
+  object-fit: contain;
+  margin-right: 5px;
+  filter: grayscale(100%);
+}
+
 /****************************/
 /** Reset **/
 /****************************/
