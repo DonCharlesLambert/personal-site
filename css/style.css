@@ -42,6 +42,13 @@ Project:	Eric
   filter: grayscale(100%);
 }
 
+.color-inline-img{
+  height: 1.5em;
+  object-fit: contain;
+  margin-right: 5px;
+}
+
+
 /****************************/
 /** Reset **/
 /****************************/
