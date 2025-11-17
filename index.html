@@ -30,6 +30,7 @@
 
     a {
         color: currentColor;
+        text-decoration: none;
     }
 
     .container {
@@ -229,6 +230,19 @@
         height: 22px;
     }
 
+    .project-card-big {
+        background: #fff;
+        border-radius: 16px;
+        border: 1px solid #e5e5e5;
+        padding: 18px 18px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
     .project-card-simple {
         background: #fff;
         border-radius: 16px;
@@ -239,34 +253,47 @@
         gap: 16px;
         align-items: flex-start;
         justify-content: center;
-        }
+    }
 
-        .project-icon {
+    .project-card-img {
+        height: 256px;
+        width: 100%;
+    }
+
+
+    .project-card-img img{
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project-icon {
         width: 42px;
         height: 42px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         flex: 0 0 42px;
-        }
+    }
 
         
-        .project-icon img{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
+    .project-icon img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 
-        .project-content {
+    .project-content {
         flex: 1;
-        }
+    }
 
-        .project-title {
+    .project-title {
         font-size: 16px;
         margin-bottom: 4px;
-        }
+    }
 
-        .project-meta {
+    .project-meta {
         display: flex;
         gap: 14px;
         flex-wrap: wrap;
@@ -274,26 +301,26 @@
         color: #777;
         margin-bottom: 10px;
         align-items: center;
-        }
+    }
 
-        .project-meta span {
+    .project-meta span {
         display: inline-flex;
         align-items: center;
         gap: 6px;
-        }
+    }
 
-        .project-desc {
+    .project-desc {
         color: #6f6f6f;
         font-size: 14px;
         line-height: 1.6;
-        }
+    }
 
-        /* small grey svg icons */
-        .meta-icon {
+    /* small grey svg icons */
+    .meta-icon {
         width: 15px;
         height: 15px;
         opacity: 0.7;
-        }
+    }
 
 
 
@@ -408,7 +435,7 @@
                 </div>
                 <div class="project-card-simple">
                     <div class="project-icon">
-                        <img src="https://logoeps.com/wp-content/uploads/2013/02/jpmorgan-vector-logo.png">
+                        <img src="./jpm.png">
                     </div>
                     <div class="project-content">
                         <div class="project-title">Associate Software Engineer</div>
@@ -426,7 +453,7 @@
                 </div>
                 <div class="project-card-simple">
                     <div class="project-icon">
-                        <img src="https://logoeps.com/wp-content/uploads/2013/02/jpmorgan-vector-logo.png">
+                        <img src="./jpm.png">
                     </div>
                     <div class="project-content">
                         <div class="project-title">Intern Software Engineer</div>
@@ -446,6 +473,27 @@
 
         </div>
 
+        
+        <div>
+            <div class="section-title">Projects</div>
+
+            <div class="projects">
+                <a href="https://github.com/DonCharlesLambert/shippuden-stories">
+                <div class="project-card-big">
+                    <div class="project-card-img">
+                        <img src="./ss.png">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">Shippuden Stories</div>
+                        <div class="project-meta">
+                            <span><i class="fa-regular fa-building"></i>Github</span>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+        </div>
         
         <div>
             <div class="section-title">Certifications</div>
