@@ -10038,3 +10038,34 @@ img {
   html:not(.no-js) [data-aos=flip-down].aos-animate {
     -webkit-transform: perspective(2500px) rotateX(0);
     transform: perspective(2500px) rotateX(0); } }
+
+.no-scroll {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.logo-img {
+  height: 40px;
+  width: 40px;
+  filter: grayscale(1);
+}
+
+.hero-img {
+  height: 250px;
+  border-radius: 50%;
+}
+
+#downArrow {
+  animation: arrowBounce 1.4s ease-in-out infinite;
+  position: absolute;
+  bottom: 5%;
+}
+
+@keyframes arrowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
